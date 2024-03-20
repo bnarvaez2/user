@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "8be6bc01-1268-4526-825b-2eb37f6e13be",
+		"name": "Brasilia Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "15447888",
+		"_collection_link": "https://orange-astronaut-432173.postman.co/workspace/Team-Workspace~12af47ac-a6c2-4577-8daa-355ad3522481/collection/15447888-8be6bc01-1268-4526-825b-2eb37f6e13be?action=share&source=collection_link&creator=15447888"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"brian\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8081/users"
+					},
+					"response": []
+				},
+				{
+					"name": "obtener",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8081/users/brian"
+					},
+					"response": []
+				},
+				{
+					"name": "obtener todos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8081/users"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user Copy",
+			"item": [
+				{
+					"name": "crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"title\",\r\n    \"description\": \"this is description\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8081/tasks/brian"
+					},
+					"response": []
+				},
+				{
+					"name": "obtener",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8081/tasks/brian/all"
+					},
+					"response": []
+				},
+				{
+					"name": "actualizar estado",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": "localhost:8081/tasks/brian/1/change-status-complete"
+					},
+					"response": []
+				},
+				{
+					"name": "borrar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:8081/tasks/brian/1"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
